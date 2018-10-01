@@ -1,0 +1,86 @@
+@media screen and (max-width: 870px) {
+.maishoje {
+    display: none !important;
+}}
+@media screen and (max-width: 1100px) {
+.maissemana {
+    display: none !important;
+}}
+@media screen and (min-width: 736px) {
+.menu-link {
+    display: none;
+}
+.panel {
+    display: none;
+}}
+
+/* Menu Link */
+.menu-link {
+    position: fixed;
+    background: #fff;
+    top: 0px;
+    right:  0px;
+    color:  #000;
+    border-radius:  4px;
+    margin: 15px;
+    padding: 10px 15px;
+    font-weight:  600;
+    z-index:  1000;
+  -moz-transition: color 0.2s ease, border-bottom 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom 0.2s ease;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.menu-link:hover{
+  background: #404040;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/*
+Nav Panel
+======================================
+*/
+
+.panel {
+      background-image: url(images/overlay.png), linear-gradient(45deg, #1b1b1b 15%, #6f6f6f 85%);
+  z-index: 9999;
+  position: fixed;
+  left: -15.625em; /*or width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
+}
+
+.panel ul {
+  border-top:  2px solid #c1c1c154;
+}
+
+.panel a {
+  display: block;
+    border-bottom: 2px solid #c1c1c154;
+  padding: 1em;
+}
+
+.panel a:link,
+.panel a:visited {
+  color: #fff;
+}
+
+.panel a:hover,
+.panel a:active {
+     background: #a5a5a570;
+    border-radius: 4px;
+}
+
+.nav-icon {
+  margin-right: 6px;
+}
